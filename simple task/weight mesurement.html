@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weight Mesurement</title>
+</head>
+<body>
+    <script>
+        function checkWeight(weightKg) {
+  const heavyThreshold = 80; 
+
+  if (weightKg >= heavyThreshold) {
+    return "Heavy";
+  } else {
+    return "No";
+  }
+}
+
+const weight = 75;
+const heavyOrNot = checkWeight(weight);
+document.write(`Is the person heavy? <br><h3>${heavyOrNot} </h3>`);
+console.log(`Is the person heavy? ${heavyOrNot}`);
+
+    </script>
+</body>
+</html>

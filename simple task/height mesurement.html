@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Height Mesurement</title>
+</head>
+<body>
+    <script>
+        function checkHeight(heightCm) {
+            const tallThreshold = 170; 
+
+            if (heightCm >= tallThreshold) {
+                return "tall";
+            } else {
+                return "no";
+            }
+        }
+
+const height = 165;
+const tallOrNot = checkHeight(height);
+document.write(`Is the person tall? <br><h3> ${tallOrNot} <h3>`);
+
+    </script>
+</body>
+</html>

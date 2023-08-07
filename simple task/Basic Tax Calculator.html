@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Tax Calculator</title>
+</head>
+<body>
+    <h1>Tax Calculator</h1>
+    <form>
+        <label>Enter value:</label>
+        <input type="number" id="amount" required>
+        <button type="button" onclick="caltax()">Calculate</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function caltax() {
+            var amount = parseInt(document.getElementById("amount").value);
+            var tax = 5;
+            var tax_rate = (amount * tax) / 100;
+            var totalAmount = amount + tax_rate;
+            
+            document.getElementById('result').innerHTML = `Total amount with Tax : ${totalAmount}`;
+        }
+    </script>
+</body>
+</html>
