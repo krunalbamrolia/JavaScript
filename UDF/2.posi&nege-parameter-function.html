@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Positive & negetive</title>
+</head>
+<body>
+<script>
+
+     //create a function 
+    function addNum(num) {
+        if(num < 0){
+            document.write('This number is negetive');
+        }
+        else if(num > 0){
+            document.write('This number is positive');
+        }
+        else{
+            document.write('This number is natural');
+        }
+
+    }
+    //get the input value
+    const userInput = parseInt(prompt("Enter a number:"));
+
+    // Call the function
+    addNum(userInput);
+
+</script>
+</body>
+</html>

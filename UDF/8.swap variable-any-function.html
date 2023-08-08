@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swap Two Variables</title>
+</head>
+<body>
+    <script>
+        function swap(a, b) {
+            var temp = a;
+            a = b;
+            b = temp;
+            return [a, b];
+        }
+
+        // Get the input values
+        var num1 = parseInt(prompt("Enter the first number:"));
+        var num2 = parseInt(prompt("Enter the second number:"));
+
+        // Display the original values
+        document.write("<h2>Original Values:</h2>");
+        document.write("First Number: " + num1 + "<br>");
+        document.write("Second Number: " + num2 + "<br>");
+
+        // Call the swap function
+        var swappedNumbers = swap(num1, num2);
+
+        // Display the swapped values
+        document.write("<h2>Swapped Values:</h2>");
+        document.write("First Number: " + swappedNumbers[0] + "<br>");
+        document.write("Second Number: " + swappedNumbers[1] + "<br>");
+    </script>
+</body>
+</html>

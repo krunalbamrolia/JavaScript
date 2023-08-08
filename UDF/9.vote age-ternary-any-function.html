@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting Eligibility</title>
+</head>
+<body>
+    <script>
+
+        // ? is if
+        // : is else 
+        function checkEligible(age) {
+            return age >= 18 ? "You are eligible for voting." : "You are not eligible for voting.";
+        }
+
+        // Get the input value
+        var userAge = parseInt(prompt("Enter your age:"));
+
+        // Call the function and display the result
+        var result = checkEligible(userAge);
+
+       document.write("<h2>" + result + "</h2>");
+    
+    </script>
+</body>
+</html>

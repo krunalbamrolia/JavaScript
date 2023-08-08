@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Max of Number</title>
+</head>
+<body>
+    <script>
+
+         //create a function 
+        function Max(a, b, c, d) {
+            if (a > b) {
+                if (a > c) {
+                    if (a > d) {
+                        return { number: a, message: "A is big" };
+                    } else {
+                        return { number: d, message: "D is big" };
+                    }
+                } else {
+                    if (c > d) {
+                        return { number: c, message: "C is big" };
+                    } else {
+                        return { number: d, message: "D is big" };
+                    }
+                }
+            } else {
+                if (b > c) {
+                    if (b > d) {
+                        return { number: b, message: "B is big" };
+                    } else {
+                        return { number: d, message: "D is big" };
+                    }
+                } else {
+                    if (c > d) {
+                        return { number: c, message: "C is big" };
+                    } else {
+                        return { number: d, message: "D is big" };
+                    }
+                }
+            }
+        }
+
+        // Get the input values
+        var a = parseInt(prompt("Enter value of A:"));
+        var b = parseInt(prompt("Enter value of B:"));
+        var c = parseInt(prompt("Enter value of C:"));
+        var d = parseInt(prompt("Enter value of D:"));
+
+        // Call the function
+        var result = Max(a, b, c, d);
+
+        // Display the result
+        document.write("<h2>" + result.message + "</h2> number is: " + result.number);
+
+    </script>
+</body>
+</html>

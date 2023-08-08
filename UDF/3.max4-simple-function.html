@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Max of Number</title>
+</head>
+<body>
+    <script>
+
+         //create a function 
+        function max() {
+            if (a > b) {
+                if (a > c) {
+                    if (a > d) {   
+                            document.write("<h2>A is big</h2> number is  :"  + a ); 
+                        }
+                    else  { 
+                            document.write("<h2>D is big</h2> number is  :"  + d );   
+                        } 
+                    }   
+                else { 
+                    if (c > d) { 
+                            document.write("<h2>C is big</h2> number is  :"  + c ); 
+                        }
+                    else { 
+                            document.write("<h2>D is big</h2> number is  :" + d );    
+                        }   
+                    }
+                }                
+            else {
+                if (b > c) {
+                    if (b > d) {
+                            document.write("<h2>B is big</h2> number is  :" + b );
+                        }
+                    else {
+                            document.write("<h2>D is big</h2> number is  :" + d );
+                        }
+                        }
+                else {
+                    if (c > d) {
+                            document.write("<h2>C is big</h2> number is  :" + c);
+                        }
+                    else {
+                            document.write("<h2>D is big</h2> number is  :" + d);
+                        }
+                    }
+                } 
+            }
+
+    //get the input value
+    var a = parseInt(prompt("Ente value of A :"));
+    var b = parseInt(prompt("Ente value of B :"));
+    var c = parseInt(prompt("Ente value of C :"));
+    var d = parseInt(prompt("Ente value of D :"));
+
+    // Call the function
+    let result = max();
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+        

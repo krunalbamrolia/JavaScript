@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Triangle</title>
+</head>
+
+<body>
+    <script>
+
+        function triangle() {
+            // Perform the operations & Calculate the result
+            if (angle == 180) {
+                document.write("<h2>Triangle is valid</h2>");
+            }
+            else {
+                document.write("<h2>Triangle is not valid</h2>");
+            }
+        }
+
+        // Get the input values
+        var x = parseFloat(prompt("Enter length of triangle side 1 :"));
+        var y = parseFloat(prompt("Enter length of triangle side 2 :"));
+        var z = parseFloat(prompt("Enter length of triangle side 3 :"));
+        var angle = (x + y + z);
+
+        // Call the function
+        let result = triangle();
+        
+    </script>
+</body>
+
+</html>
